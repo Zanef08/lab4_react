@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+/* Styles for the card container */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #f7f7f7;
+}
+
+/* Styles for the film image */
+.film-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for the film title */
+.film-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Styles for the film year and nation */
+.film-year, .film-nation {
+  font-size: 14px;
+}
+
+/* Styles for the watch button */
+.watch-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.watch-button:hover {
+  background-color: #0056b3;
+}
+
+nav {
+  background-color: #333; /* Background color */
+  overflow: hidden;
+}
+
+/* Style for the navigation links */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px; /* Add spacing between links */
+}
+
+nav a {
+  color: white; /* Link text color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #61dafb; /* Hover color */
+}
+
+.footer {
+  background-color: #333; /* Chọn màu nền mà bạn muốn */
+  color: white; /* Chọn màu chữ */
+  text-align: center;
+  padding: 20px;
+}
+
