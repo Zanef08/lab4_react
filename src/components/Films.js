@@ -3,6 +3,7 @@ export default class Film extends Component {
     render() {
         return (
             <div className="container">
+                <h2>List of Films</h2>
                 <div className='column'>
                     <div className='card film-card' id="1">
                         <img className="film-image" src='assets/images/1.jpg' alt=""/>
