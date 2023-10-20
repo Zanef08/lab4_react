@@ -37,16 +37,22 @@
   }
 }
 
-.card {
+.film-card {
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
   text-align: center;
-  width: 200px;
+  align-items: center;
   height: fit-content;
-  background-color: #f7f7f7;
+  width: fit-content; 
 }
+.film-card a {
+  color: #000000;
+  text-decoration: none;
+}
+.film-card a:hover {
+  color: #000000;
+  text-decoration: underline;
+} 
 
 .film-image {
   max-width: 90%;
@@ -60,24 +66,15 @@
 }
 
 .film-year, .film-nation {
+  margin: 0  ;
   font-size: 14px;
 }
-
-.watch-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-.watch-button:hover {
-  background-color: #0056b3;
+.film-nation  {
+  margin: 0 0 5px 0;
 }
 
 nav {
-  background-color: #333; 
+  background-color: #000000; 
   overflow: hidden;
 }
 
@@ -99,7 +96,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #61dafb;
+  color: white;
+  text-decoration: underline;
 }
 
 .footer {
@@ -127,27 +125,52 @@ nav a:hover {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
+
 .popup {
-  margin: 70px auto;
   padding: 5px;
-  background:black;
   border-radius: 5px;
   width: 60%;
+  display: flex;
   position: relative;
-  transition: all 5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-.popup img{ width: 30%;}
-.popup h3 {
-  margin-top: 0;
-  color: white;
-  font-family: Tahoma, Arial, sans-serif;
+
+.popup .film-image {
+  width: 30%;
 }
-.popup .close {
+
+.popup .film-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.popup .film-title {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.popup  .film-year {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.popup .film-nation {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -155,13 +178,18 @@ nav a:hover {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: white;
 }
-.popup .close:hover {color: #d80606;}
-.popup .content {
+
+.close:hover {
+  color: #d80606;
+}
+
+.info {
+  text-align: left;
   max-height: 30%;
-  overflow: auto;
+
 }
-.popup .info {
-  color: white;
+
+.detail {
+  margin-left: 200px;
 }
