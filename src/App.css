@@ -37,9 +37,6 @@
   }
 }
 
-/* App.css */
-
-/* Styles for the card container */
 .card {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -47,27 +44,25 @@
   padding: 10px;
   text-align: center;
   width: 200px;
+  height: fit-content;
   background-color: #f7f7f7;
 }
 
-/* Styles for the film image */
 .film-image {
-  max-width: 100%;
-  height: auto;
+  max-width: 90%;
+  width: 250px;
+  height: 300px;
 }
 
-/* Styles for the film title */
 .film-title {
   font-size: 18px;
   margin: 10px 0;
 }
 
-/* Styles for the film year and nation */
 .film-year, .film-nation {
   font-size: 14px;
 }
 
-/* Styles for the watch button */
 .watch-button {
   background-color: #007bff;
   color: #fff;
@@ -82,11 +77,10 @@
 }
 
 nav {
-  background-color: #333; /* Background color */
+  background-color: #333; 
   overflow: hidden;
 }
 
-/* Style for the navigation links */
 nav ul {
   list-style: none;
   padding: 0;
@@ -94,24 +88,31 @@ nav ul {
 
 nav li {
   display: inline;
-  margin-right: 20px; /* Add spacing between links */
+  margin-right: 20px; 
 }
 
 nav a {
-  color: white; /* Link text color */
+  color: white; 
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
 }
 
 nav a:hover {
-  color: #61dafb; /* Hover color */
+  color: #61dafb;
 }
 
 .footer {
-  background-color: #333; /* Chọn màu nền mà bạn muốn */
-  color: white; /* Chọn màu chữ */
+  background-color: #333; 
+  color: white; 
   text-align: center;
   padding: 20px;
+  width: 100%;
 }
-
+.three-column {
+  grid-template-columns: repeat(5, 0fr)
+}
+.grid {
+  display: grid;
+  gap: 1em;
+}

@@ -1,12 +1,14 @@
 import './App.css';
 import Navigation from './components/Navigation';
-import Film from './components/Films';
 import Footer from './components/Footer';
+import Films from './components/Films'
+import "bootstrap/dist/css/bootstrap.css";
+
 function App() {
   return (
     <div className="App">
       <Navigation></Navigation>
-      <Film></Film>
+      <Films></Films>
       <Footer></Footer>
     </div>
   );
