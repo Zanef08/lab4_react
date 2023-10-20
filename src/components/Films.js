@@ -35,7 +35,7 @@ function Films() {
       <div className="row"> {Film.map((film) => (
         <div className="col-md-4 film-card" id={film.id}>
           <img className="film-image" src={film.image} alt="" />
-          <a href='#popup1' onClick={() => openPopup(film)}><h3 className="film-title">{film.title}</h3></a>
+          <a href='#popup1' onClick={() => openPopup(film)} style={changebody}><h3 className="film-title">{film.title}</h3></a>
           <p className="film-year">{film.year}</p>
           <p className="film-nation">{film.nation}</p>
           <Link to={`detail/${film.id}`}>

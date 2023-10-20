@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 const themes = {
     dark: {
-        backgroundColor: 'grey',
+        backgroundColor: '#1d1d1d',
         color: 'white',
         popupBackground: 'white',
         colorpopup: 'black'
